@@ -1,0 +1,78 @@
+@base-width: 320px;
+@lightblue: #81b3d2;
+@lightblue__hover: #669ec0;
+@lightblue__active: #5496bd;
+@lightblue__dis: #e5e5e5;
+@lightgrey: #dbd8d5;
+@middlegrey: #766357;
+@darkgrey: #604e43;
+@radio: #f2f2f2;
+@radio__hover: #e5e5e5;
+@radio__active:#d5d5d5;
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+@import "main-nav.less";
+@import "page-main.less";
+@import "page-footer.less";
+@import "form.less";
+@import "photo.less";
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans'),
+       url('../fonts/ptsans.woff2') format('woff2'),
+       url('../fonts/ptsans.woff') format('woff');
+}
+@font-face {
+  font-family: 'PT Sans Bold';
+  src: local('PT Sans Bold'),
+       url('../fonts/ptsansbold.woff2') format('woff2'),
+       url('../fonts/ptsansbold.woff') format('woff');
+}
+body {
+  min-width: @base-width;
+  background-color: white;
+  margin: 0;
+}
+  .main-text() {
+    font-family: PT Sans, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 2;
+    text-transform: uppercase;
+    color: black;
+  }
+  .header-text() {
+    font-family: PT Sans Bold, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: black;
+  }
+  .button {
+    margin: 0 auto;
+    background-color: @lightblue;
+    &:hover {
+      background-color: @lightblue__hover;
+    }
+    &:active {
+      background-color: @lightblue__active;
+    }
+    &:disabled {
+      background-color: @lightblue__dis;
+    }
+  }
+  .visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
