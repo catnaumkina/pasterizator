@@ -1,6 +1,7 @@
 body {
   background-color: white;
-  font-family: arial;
+  font-family: arial, sans-serif;
+  font-size: 12px;
 }
 .page-header {
   background-color: white;
@@ -9,7 +10,7 @@ body {
 }
 .page-header__1 {
   position: relative;
-  background-color: #cccc66;
+  background-color: #ccff66;
   height: 65px;
   padding: 10px 0 5px 15px;
   width: 320px;
@@ -42,7 +43,7 @@ body {
   font-family: Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  color: #99cc66;
+  color: #9cbc4b;
 }
 .page-header__slogan--grey {
   color: #333333;
@@ -62,4 +63,45 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+.site-list__item a {
+  display: block;
+  padding-top: 5px;
+  width: 320px;
+  height:25px;
+  text-align: center;
+  background-color: #333333;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: 1px solid #565656;
+}
+
+.site-list__item--active a {
+  color: #9cbc4b;
+}
+.site-list__item a:hover {
+  background-color: #ccff66;
+  color:#333333;
+}
+.page-main {
+  width:320px;
+  margin: 0 auto;
+}
+.page-main__2 {
+  background-color: #333333;
+  color: white;
+  font-weight: bold;
+
 }
