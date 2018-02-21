@@ -7,11 +7,12 @@
   </head>
   <body>
     <header class="page-header">
+      <div class="page-header__wrapper">
       <div class="page-header__1">
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo_goltex.svg" width="45" height="45" alt="Голтекс">
           <span class="page-header__name">НТК Голтекс</span>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </a>
       </div>
       <div class="page-header__2">
@@ -24,6 +25,7 @@
         <a href="tel:+74955982169" class="page-header__tel">8(495)598-21-69</a><br>
         <a href="tel:+74955982965" class="page-header__tel">8(495)598-29-65</a>
       </div>
+    </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -51,8 +53,9 @@
     </header>
     <main class="page-main">
        <h1 class="visually-hidden">Пастеризаторы молока ПМР-02ВТ, пива, вина от компании Голтекс</h1>
-       <div class="page-main__1">
-         <img class="page-main__baner" src="img/1c.jpg" width="300px">
+      <div class="page-main__wrapper">
+      <div class="page-main__1">
+         <img class="page-main__baner" src="img/1c.jpg">
       </div>
        <div class="page-main__2">
          <h3 class="page-main__h3">Кратко о нас</h3>
@@ -74,6 +77,7 @@
            </li>
          </ul>
        </div>
+     </div>
        <section class="page-main__product">
           <header class="page-main__header">
             <h3 class="page-main__h3">Наша продукция</h3>
@@ -108,8 +112,8 @@
          </header>
        </section>
        <section class="page_main__clients">
-         <header class="page_main__header">
-           <h3 class="page-main__h3">Наши клиенты</h3>
+         <h3 class="page-main__h3 ">Наши клиенты</h3>
+         <div class="clients__wrapper">
            <div class="page-main__green">
              <ul class="clients__list">
                <li class="clients__item">Очаковский молочный завод</li>
@@ -117,6 +121,7 @@
                <li class="clients__item">ООО "РостАгроКомплекс"</li>
                <li class="clients__item">ООО "Агро-3" и другие</li>
              </ul>
+             <img class="clients__img" src="img/cows.jpg">
            </div>
            <div class="page-main__shadow">
              <p>Фермерские хозяйства и молокозаводы по всей России, более 100000 хозяйств, многие обращаются повторно и при расширении мощностей уже не ищут альтернатив, доверяя нам. </p>
@@ -126,10 +131,10 @@
              <p>Пастеризационные и стерилизационные установки  изготавливаются по техническим требованиям клиента. Наши специалисты  помогут Вам подобрать оборудование именно под Ваши цели и задачи.</p>
              <p>И здесь много прекрасного разного текста, очень человечного и взывающего к разуму!</p>
              <p>А еще мы работаем с лизинговыми компаниями, поэтому Вам будет легко и просто расплатиться за установку.</p>
+             <a class="page-main__button" href="#">Смотреть прайс-лист</a>
            </div>
-           <a class="page-main__button" href="#">Смотреть прайс-лист</a>
-         </header>
-       </section>
+         </div>
+         </section>
        <section class="page-main__low">
          <header class="page_main__header">
            <h3 class="page-main__h3">- А мы нашли дешевле...</h3>
@@ -143,6 +148,7 @@
 Как известно, скупой платит дважды.</li>
             </ul>
             <p class="page-main__bigtext">Не лучше ли сразу купить именно то, что вам надо?</p>
+            <a class="page-main__button" href="#">Перейти в каталог</a>
            </div>
          </header>
        </section>
@@ -178,9 +184,12 @@
        <section class="page-main__quality">
          <header class="page_main__header">
            <h3 class="page-main__h3">Мы гарантируем высокое  качество узлов и агрегатов</h3>
+           <div class="quality__wrapper">
+             <div class="quality__item">
+               <img src="img/quality.jpg" class="quality__image">
+               <a class="page-main__button" href="#">Перейти в каталог</a>
+             </div>
            <div class="page_main__shadow">
-             <img src="#" class="quality__image">
-             <a class="page-main__button" href="#">Перейти в каталог</a>
              <p>Мы выпускаем оборудование, с которым приятно работать, уделяем большое внимание .......................</p>
              <p>Наши соединения не текут, шланги не лопаются, поэтому ремонт не потребуется. Мы сотрудничаем с ведущими российскими заводами (в том числе и оборонными), которые уже на протяжении многих лет помогают нам комплектовать установки современными ....</p>
              <p>Наши технологии отточены, постащики проверены. </p>
