@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Пастеризаторы молока, пива, вина, соков от компании Голтекс</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -12,7 +13,6 @@
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo_goltex.svg" width="45" height="45" alt="Голтекс">
           <span class="page-header__name">НТК Голтекс</span>
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </a>
       </div>
       <div class="page-header__2">
@@ -26,7 +26,8 @@
         <a href="tel:+74955982965" class="page-header__tel">8(495)598-29-65</a>
       </div>
     </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -50,6 +51,8 @@
           </ul>
         </div>
       </nav>
+    <div class="deco1"></div>
+    <div class="deco2"></div>
     </header>
     <main class="page-main">
        <h1 class="visually-hidden">Пастеризаторы молока ПМР-02ВТ, пива, вина от компании Голтекс</h1>
@@ -195,10 +198,35 @@
              <p>Наши технологии отточены, постащики проверены. </p>
              <p>Также мы используем только качественную пищевую нержавейку, сертифицированную в России.   Подробнее...</p>
            </div>
+         </div>
          </header>
        </section>
     </main>
-    <footer>
+    <footer class="footer">
+      <div class="footer__adress">
+      <span class="footer__green">Наш адрес: </span><br> г. Голицыно, Звенигородское шоссе, 15  на территории ОАО "ГОЗСА" ("Голицынский опытный завод средств автоматизации").
+      </div>
+      <div class="footer__tel"><span class="footer__green">Наши телефоны: </span><br>
+       (495) 598-21-69, 598-29-65<br>(495) 916-76-16, 916-76-14 <br>
+        В выходные и праздничные дни Вы можете связаться с менеджером по телефону: 8-910-428-01-53</div>
+     <div class="footer__mail"><span class="footer__green">E-mail:</span><br><a href="mailto:paster@pasterizator.ru" class="page-main__button">Напишите нам</a>
+     </div>
     </footer>
+    <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
   </body>
 </html>
